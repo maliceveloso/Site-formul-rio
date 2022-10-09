@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form class="formulario" method="post"> 
+
+        <p><label style="color:black; font-size: 15px;"for="nome">Preencha o formulário abaixo com seus dados:</label></p>
+        
+        <div class="field">
+            <label style="color:black; font-size: 15px;"for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome*" required>
+            <div class="field">
+            <label style="color:black; font-size: 15px;" for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome*" required>
+            <div class="field">
+            <label style="color:black; font-size: 15px;" for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Insira seu telefone">
+            <div class="field">
+            <label style="color:black; font-size: 15px;" for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu e-mail*" required>
+            
+
+            <div class="field">
+            <label style="color:black; font-size: 15px;" for="mensagem">Digite sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+        
+        <div class="field">
+            <label style="color:black; font-size: 15px;" for="lingua">Lígua:</label>
+            <select>
+                <option>Inglês</option>
+                <option>Espanhol</option>
+                <option>Francês</option>
+                <option>Português (pt-br)</option>
+               </select>
+        
+        <div class="field">
+            <label style="color:black; font-size: 15px;" for="prototipo">Protótipo:</label>
+        <input type="file"  id="docpicker" accept=".doc,.docx,.pdf, image/png, image/jpeg/>
+        </div>
+ 
+    <div class="field">
+    <p><p><label style="color:black; font-size: 15px;">Qual a linguagem que você prefere?</label></p></p>
+    <select id="ling_prog" multiple>
+        <option>Java</option>
+        <option>C</option>
+        <option>C++</option>
+        <option>PHP</option>
+    </select> 
+    Segure a tecla <b>ctrl</b> e clique com o mouse, caso deseje escolher várias opções.
+
+    </div>
+    
+
+<div class="field">
+    <label style="color:black; font-size: 15px;">Banco de Dados</label>
+    <label>
+        <input type="radio" name="linguagem">
+        <span>MySQL</span>
+    </label>
+   
+    <label >
+        <input type="radio" name="linguagem">
+        <span>Postgresql</span>
+    </label>
+    
+    <label >
+        <input type="radio" name="linguagem">
+        <span>MongoDB</span>
+    </label>
+    
+    <label >
+        <input type="radio" name="linguagem">
+        <span>N/A</span>
+    </label>
+   
+    <label >
+        <input type="radio" name="linguagem">
+        <span>Outra</span>
+    </label>
+</div>
+<div class="field">
+    <label style="color:black; font-size: 15px;">Turno para Reuniões*</label>
+    <label>
+        <input type="checkbox" name="turno" id="manha" required>
+        <span>Manhã</span>
+    </label>
+    
+    <label style="color:black; font-size: 15px;" >
+        <input type="checkbox" name="turno" id="tarde" required>
+        <span>Tarde</span>
+    </label>
+    
+    <label style="color:black; font-size: 15px;" >
+        <input type="checkbox" name="turno" id="noite" required>
+        <span>Noite</span>
+    </label>
+</div>
+<div>
+<label style="color:black; font-size: 15px;" for="appt">Horário sugerido:</label>
+
+<input type="time" id="appt" name="appt"
+       min="00:00" max="23:59" required>
+
+</div>
+<div>
+    <p><label for="appt">Data sugerida para entrega:</label></p>
+    <p><input id="date" type="date"></p>
+</div>
+</fieldset>
+    <p><input type="submit" name="acao" value="Enviar"><input type="reset" name="limpar" value="Limpar"></p>
+    </form>
+
+</body>
+</html>
